@@ -24,7 +24,6 @@ all: ./build/$(MAIN).pdf
 ./Chapters/%.tex : ./markdown/%.md 
 	$(PANDOC) $(PANDOCOP) -o $@ $<
 
-
 #
 #.refresh:
 #    touch .refresh
